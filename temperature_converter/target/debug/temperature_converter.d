@@ -1,0 +1,1 @@
+C:\the_rust_programming_language\temperature_converter\target\debug\temperature_converter.exe: C:\the_rust_programming_language\temperature_converter\src\main.rs
