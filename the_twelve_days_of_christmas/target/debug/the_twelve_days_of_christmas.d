@@ -1,0 +1,1 @@
+C:\the_rust_programming_language\the_twelve_days_of_christmas\target\debug\the_twelve_days_of_christmas.exe: C:\the_rust_programming_language\the_twelve_days_of_christmas\src\main.rs
