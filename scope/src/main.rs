@@ -46,10 +46,23 @@ fn main() {
 //    let s2 = String::from("hello");
 //    let s3 = takes_and_gives_back(s2);
 
-    let s1 = String::from("hello");
-    let (s2, len) = calculate_length(s1);
+//    let s1 = String::from("hello");
+//    let (s2, len) = calculate_length(s1);
+//
+//    println!("The length of '{s2}' is {len}.");
 
-    println!("The length of '{s2}' is {len}.");
+//    let s1 = String::from("hello");
+//    let len = calculate_length(&s1);
+//
+//    println!("The length of '{s1}' in {len}.");
+
+    let mut s = String::from("hello");
+    change(&mut s);
+
+    let r1 = &mut s;
+    let r2 = &mut s;
+
+    println!("{}, {}", r1, r2);
 }
 
 //fn takes_ownership(some_string: String) {
@@ -69,8 +82,16 @@ fn main() {
 //    a_string
 //}
 
-fn calculate_length(s: String) -> (String, usize) {
-    let length = s.len();
+//fn calculate_length(s: String) -> (String, usize) {
+//    let length = s.len();
+//
+//    (s, length)
+//}
 
-    (s, length)
+//fn calculate_length(s: &String) -> usize {
+//    s.len()
+//}
+
+fn change(some_string: &mut String) {
+    some_string.push_str(", world");
 }
